@@ -1,7 +1,7 @@
-FROM node:latest
+FROM node:16
 
 # WORKDIR /usr/src/app
-WORKDIR /
+WORKDIR /usr/src/ap
 COPY package*.json ./
 RUN npm install
 COPY . .
