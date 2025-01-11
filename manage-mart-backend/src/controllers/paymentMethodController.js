@@ -1,4 +1,4 @@
-const paymentMethod = require("../models/paymentMethod");
+const paymentMethod = require("../../models/paymentMethod");
 
 const getAllPaymentMethods = async (req, res) => {
   try {
