@@ -1,12 +1,12 @@
 const fs = require("fs");
 const path = require("path");
 
-const modelPath = path.resolve(__dirname, "../../models/paymentMethod.js");
+const modelPath = path.resolve(__dirname, "../models/paymentMethod.js");
 console.log("Checking model path:", modelPath);
 console.log("File exists?", fs.existsSync(modelPath));
 
-// const paymentMethod = require("../../models/paymentMethod");
-const paymentMethod = require(path.join(__dirname, "../../models/paymentMethod"));
+const paymentMethod = require("../models/paymentMethod");
+
 
 const getAllPaymentMethods = async (req, res) => {
   try {
